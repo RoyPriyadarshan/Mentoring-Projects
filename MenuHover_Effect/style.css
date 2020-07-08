@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+    transition: 0.5s;
+}
+
+ul li a{
+    position: relative;
+    color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 5em;
+    padding: 0 10px;
+    line-height: 1.2em;
+}
+
+ul li a:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    -webkit-text-stroke: 1px #eeeeee;
+    transform: translateX(0);
+    transition: 0.5s;
+    pointer-events: none;
+}
+ul li a:hover:before{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+ul li .home:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #be79df;
+}
+ul li a:hover:after{
+    transform: translateX(0);
+    opacity: 1;
+}
+ul li .about:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #e71414;
+}
+ul li .contact:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #79d70f;
+}
+ul li .portfolio:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #e8e4e1;
+}
+ul li .contact:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #79d70f;
+}
