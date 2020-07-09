@@ -118,7 +118,7 @@ ul li .portfolio:after{
     opacity: 0;
     color: #e8e4e1;
 }
-ul li .contact:after{
+ul li .con:after{
     content: attr(data-text);
     position: absolute;
     top: 0;
